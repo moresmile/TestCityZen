@@ -46,12 +46,16 @@
         <div class="container">
             <h2>Become a Beta Tester</h2>
             <p>Sign up to get early access to CityZen.</p>
-            <form action="https://script.google.com/macros/s/AKfycbxYmgFZnnw1iDv_BOyK9U_dTqPG5CrmAm10Rh_v4NDGE9U-UcELGmE338h2zhE9Dik1/exec" method="POST" class="row justify-content-center" id="signup-form" onsubmit="return false;">
+            <form
+                action="https://script.google.com/macros/s/AKfycbxYmgFZnnw1iDv_BOyK9U_dTqPG5CrmAm10Rh_v4NDGE9U-UcELGmE338h2zhE9Dik1/exec"
+                method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="col-md-6">
                     <input type="email" name="email" class="form-control mb-3" placeholder="Enter your email" required>
                     <button type="submit" class="btn btn-success btn-lg">Sign Up</button>
                 </div>
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
         </div>
     </section>
     test
